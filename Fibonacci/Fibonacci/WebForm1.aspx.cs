@@ -24,9 +24,9 @@ namespace Recursividad_Base
             ejemplos_recursivos serie = new ejemplos_recursivos();
             int n = 0;
             string resultado = "";
-            for (int i = 0; i <= int.Parse(TBx_hasta_n.Text); i++)
+            for (int i = 1; i <= int.Parse(TBx_hasta_n.Text); i++)
             {
-                resultado += " "+ serie.serie_fibonacci(int.Parse(TBx_hasta_n.Text)).ToString();
+                resultado += " "+ serie.serie_fibonacci(i).ToString();
             }
             Lbl_Elementos.Text = resultado;
 
